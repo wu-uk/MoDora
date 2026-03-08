@@ -39,12 +39,12 @@ export function FeaturesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true, amount: 0.3 }}
-            className="-translate-y-2 text-center space-y-4 max-w-3xl mx-auto"
+            className="relative z-20 text-center space-y-4 max-w-3xl mx-auto"
           >
             <ScrollGlowTitle className="text-3xl font-bold tracking-tight sm:text-4xl">
               Key Features
             </ScrollGlowTitle>
-            <p className="text-lg text-muted-foreground">
+            <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
               Built for depth and accuracy. MoDora goes beyond simple text matching.
             </p>
           </motion.div>
@@ -54,7 +54,7 @@ export function FeaturesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
             viewport={{ once: true, amount: 0.2 }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+            className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6"
           >
             {features.map((feature, index) => (
               <motion.div

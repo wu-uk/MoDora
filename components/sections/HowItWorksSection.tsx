@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { ScrollGlowTitle } from "@/components/ui/scroll-glow-title";
+import { SpotlightCard } from "@/components/ui/spotlight-card";
 import { Upload, ScanLine, GitFork, Search, MessageSquare } from "lucide-react";
 
 const steps = [
@@ -71,13 +72,18 @@ export function HowItWorksSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1], delay: index * 0.06 }}
                   viewport={{ once: true, amount: 0.2 }}
-                  className="aurora-card flex flex-col items-center text-center bg-background/90 p-6 rounded-lg border border-violet-200/40 dark:border-violet-400/20 shadow-sm"
+                  className="h-full"
                 >
-                  <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
-                    <step.icon className="h-6 w-6" />
-                  </div>
-                  <h3 className="font-semibold mb-2">{step.title}</h3>
-                  <p className="text-sm text-muted-foreground">{step.description}</p>
+                  <SpotlightCard
+                    className="aurora-card h-full flex flex-col items-center text-center bg-background/90 p-6 rounded-lg border border-violet-200/40 dark:border-violet-400/20 shadow-sm"
+                    spotlightColor="rgba(167, 139, 250, 0.2)"
+                  >
+                    <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
+                      <step.icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="font-semibold mb-2">{step.title}</h3>
+                    <p className="text-sm text-muted-foreground">{step.description}</p>
+                  </SpotlightCard>
                 </motion.div>
               ))}
             </div>
