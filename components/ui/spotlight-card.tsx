@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 export const SpotlightCard = ({
   children,
   className = "",
-  spotlightColor = "rgba(255, 255, 255, 0.25)",
+  spotlightColor,
 }: {
   children: React.ReactNode;
   className?: string;
@@ -15,6 +15,10 @@ export const SpotlightCard = ({
 }) => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
+
+  // 默认光晕颜色：浅色模式下用深色，深色模式下用浅色
+  const defaultSpotlightColor = "rgba(120, 119, 198, 0.15)";
+  const finalSpotlightColor = spotlightColor || defaultSpotlightColor;
 
   function handleMouseMove({
     currentTarget,
@@ -36,18 +40,18 @@ export const SpotlightCard = ({
       onMouseMove={handleMouseMove}
     >
       <motion.div
-        className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover:opacity-100"
+        className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition duration-300 group-hover:opacity-100 z-10"
         style={{
           background: useMotionTemplate`
             radial-gradient(
-              650px circle at ${mouseX}px ${mouseY}px,
-              ${spotlightColor},
+              400px circle at ${mouseX}px ${mouseY}px,
+              ${finalSpotlightColor},
               transparent 80%
             )
           `,
         }}
       />
-      <div className="relative h-full">{children}</div>
+      <div className="relative h-full z-0">{children}</div>
     </div>
   );
 };

@@ -64,7 +64,10 @@ export function FeaturesSection() {
                 viewport={{ once: true, amount: 0.2 }}
                 className="h-full"
               >
-                <SpotlightCard className="h-full p-8 bg-secondary/5 border-secondary/20">
+                <SpotlightCard 
+                  className="h-full p-8 bg-secondary/5 border-secondary/20"
+                  spotlightColor="rgba(59, 130, 246, 0.2)"
+                >
                   <div className="relative z-10">
                     <div className="mb-4 inline-flex items-center justify-center rounded-lg bg-primary/10 p-3 text-primary">
                       <feature.icon className="h-6 w-6" />

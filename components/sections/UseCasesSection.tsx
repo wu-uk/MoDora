@@ -64,7 +64,10 @@ export function UseCasesSection() {
                 viewport={{ once: true, amount: 0.2 }}
                 className="h-full"
               >
-                <SpotlightCard className="h-full p-6 bg-white dark:bg-slate-900 border-neutral-200 dark:border-white/10 hover:shadow-xl transition-shadow">
+                <SpotlightCard 
+                  className="h-full p-6 bg-white dark:bg-slate-900 border-neutral-200 dark:border-white/10 hover:shadow-xl transition-shadow"
+                  spotlightColor="rgba(147, 51, 234, 0.15)"
+                >
                   <div className="relative z-10 flex flex-col h-full">
                     <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
                       <useCase.icon className="h-6 w-6" />
