@@ -34,13 +34,11 @@ export function HeroSection() {
             </div>
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-foreground leading-[1.1]">
-              Multimodal Document <br className="hidden md:block" />
-              <span className="text-gradient">Analysis Assistant</span>
+              MoDora
             </h1>
             
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Understand complex documents by organizing text, tables, and figures into a structured tree. 
-              Perform grounded retrieval and reasoning with MoDora.
+            <p className="text-xl md:text-3xl text-muted-foreground max-w-2xl mx-auto font-light">
+              Multimodal Document Analysis Assistant
             </p>
           </motion.div>
 
