@@ -8,12 +8,16 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden py-20 md:py-32 lg:py-40">
-      {/* Abstract Background Visualization */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-primary/5 rounded-full blur-3xl opacity-50" />
-        <div className="absolute bottom-0 right-0 w-[800px] h-[400px] bg-blue-400/5 rounded-full blur-3xl opacity-30" />
+    <section className="relative overflow-hidden py-20 md:py-32 lg:py-40 bg-background">
+      {/* Grid Background & Glow */}
+      <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-slate-950 bg-grid-small-black dark:bg-grid-small-white">
+        {/* Radial gradient mask */}
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white dark:bg-slate-950 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       </div>
+      
+      {/* Ambient Glows */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-primary/20 rounded-full blur-[120px] opacity-50 pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[800px] h-[400px] bg-purple-500/20 rounded-full blur-[100px] opacity-30 pointer-events-none" />
 
       <Container>
         <div className="flex flex-col items-center text-center space-y-8">
@@ -21,16 +25,16 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="space-y-4 max-w-3xl"
+            className="space-y-4 max-w-4xl"
           >
-            <div className="inline-flex items-center rounded-full border px-3 py-1 text-sm font-medium text-muted-foreground bg-secondary/50 backdrop-blur-sm mb-4">
-              <span className="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
+            <div className="inline-flex items-center rounded-full border border-primary/20 px-3 py-1 text-sm font-medium text-primary bg-primary/5 backdrop-blur-sm mb-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] dark:shadow-[0_0_15px_rgba(255,255,255,0.05)]">
+              <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
               Now Open Source
             </div>
             
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-foreground leading-[1.1]">
               Multimodal Document <br className="hidden md:block" />
-              <span className="text-primary">Analysis Assistant</span>
+              <span className="text-gradient">Analysis Assistant</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">

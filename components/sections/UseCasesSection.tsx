@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { SpotlightCard } from "@/components/ui/spotlight-card";
 import { Microscope, TrendingUp, Code, BookOpen } from "lucide-react";
 
 const useCases = [
@@ -62,18 +62,19 @@ export function UseCasesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1], delay: index * 0.06 }}
                 viewport={{ once: true, amount: 0.2 }}
+                className="h-full"
               >
-                <Card className="hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <useCase.icon className="h-8 w-8 text-primary mb-2" />
-                    <CardTitle className="text-xl">{useCase.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground">
+                <SpotlightCard className="h-full p-6 bg-white dark:bg-slate-900 border-neutral-200 dark:border-white/10 hover:shadow-xl transition-shadow">
+                  <div className="relative z-10 flex flex-col h-full">
+                    <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                      <useCase.icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="mb-2 text-lg font-bold">{useCase.title}</h3>
+                    <p className="text-sm text-muted-foreground flex-grow">
                       {useCase.description}
                     </p>
-                  </CardContent>
-                </Card>
+                  </div>
+                </SpotlightCard>
               </motion.div>
             ))}
           </motion.div>

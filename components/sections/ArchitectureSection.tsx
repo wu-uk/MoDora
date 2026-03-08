@@ -55,10 +55,13 @@ export function ArchitectureSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="relative bg-secondary/20 rounded-xl p-8 border border-secondary"
+            className="relative glass-card rounded-xl p-8 overflow-hidden"
           >
+             {/* Inner Grid */}
+             <div className="absolute inset-0 z-0 bg-grid-small-black dark:bg-grid-small-white opacity-20 [mask-image:linear-gradient(to_bottom,transparent,white)]"></div>
+
              {/* Tree Visualization */}
-             <div className="flex flex-col items-center space-y-4">
+             <div className="relative z-10 flex flex-col items-center space-y-4">
                 {/* Root */}
                 <div className="bg-background border shadow-sm px-4 py-2 rounded-md flex items-center gap-2 font-medium">
                   <FileText className="h-4 w-4 text-primary" /> Document Root

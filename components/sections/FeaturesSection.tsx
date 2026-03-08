@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { SpotlightCard } from "@/components/ui/spotlight-card";
 import { FileSearch, Network, Quote, Library } from "lucide-react";
 
 const features = [
@@ -62,18 +62,19 @@ export function FeaturesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1], delay: index * 0.06 }}
                 viewport={{ once: true, amount: 0.2 }}
+                className="h-full"
               >
-                <Card className="border-none shadow-lg bg-secondary/20 hover:bg-secondary/40 transition-colors">
-                  <CardHeader>
-                    <feature.icon className="h-10 w-10 text-primary mb-2" />
-                    <CardTitle>{feature.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
+                <SpotlightCard className="h-full p-8 bg-secondary/5 border-secondary/20">
+                  <div className="relative z-10">
+                    <div className="mb-4 inline-flex items-center justify-center rounded-lg bg-primary/10 p-3 text-primary">
+                      <feature.icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="mb-2 text-xl font-bold">{feature.title}</h3>
                     <p className="text-muted-foreground">
                       {feature.description}
                     </p>
-                  </CardContent>
-                </Card>
+                  </div>
+                </SpotlightCard>
               </motion.div>
             ))}
           </motion.div>
