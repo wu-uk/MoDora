@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileSearch, Network, Quote, Library } from "lucide-react";
@@ -30,30 +33,50 @@ export function FeaturesSection() {
     <section id="features" className="py-20">
       <Container>
         <div className="space-y-12">
-          <div className="text-center space-y-4 max-w-3xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="text-center space-y-4 max-w-3xl mx-auto"
+          >
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Key Features
             </h2>
             <p className="text-lg text-muted-foreground">
               Built for depth and accuracy. MoDora goes beyond simple text matching.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {features.map((feature) => (
-              <Card key={feature.title} className="border-none shadow-lg bg-secondary/20 hover:bg-secondary/40 transition-colors">
-                <CardHeader>
-                  <feature.icon className="h-10 w-10 text-primary mb-2" />
-                  <CardTitle>{feature.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          >
+            {features.map((feature, index) => (
+              <motion.div
+                key={feature.title}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1], delay: index * 0.06 }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                <Card className="border-none shadow-lg bg-secondary/20 hover:bg-secondary/40 transition-colors">
+                  <CardHeader>
+                    <feature.icon className="h-10 w-10 text-primary mb-2" />
+                    <CardTitle>{feature.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">
+                      {feature.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </Container>
     </section>

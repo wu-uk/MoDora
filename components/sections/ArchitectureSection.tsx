@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { FileText, Image as ImageIcon, Table, ChevronDown } from "lucide-react";
 
@@ -6,7 +9,13 @@ export function ArchitectureSection() {
     <section id="architecture" className="py-20">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="space-y-6"
+          >
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Component-Correlation Tree
             </h2>
@@ -39,9 +48,15 @@ export function ArchitectureSection() {
                 </span>
               </li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="relative bg-secondary/20 rounded-xl p-8 border border-secondary">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="relative bg-secondary/20 rounded-xl p-8 border border-secondary"
+          >
              {/* Tree Visualization */}
              <div className="flex flex-col items-center space-y-4">
                 {/* Root */}
@@ -78,7 +93,7 @@ export function ArchitectureSection() {
                    </div>
                 </div>
              </div>
-          </div>
+          </motion.div>
         </div>
       </Container>
     </section>
