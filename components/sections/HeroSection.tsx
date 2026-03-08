@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-background pt-16 pb-24 md:pt-24 md:pb-36">
+    <section className="relative overflow-hidden bg-background min-h-screen pt-20 pb-20 md:pt-24 md:pb-24">
       <div className="absolute inset-0 -z-10 bg-white dark:bg-slate-950 bg-grid-small-black dark:bg-grid-small-white" />
       <div className="pointer-events-none absolute -top-24 left-[8%] h-72 w-72 rounded-full bg-violet-300/30 blur-[90px]" />
       <div className="pointer-events-none absolute top-16 right-[8%] h-80 w-80 rounded-full bg-fuchsia-300/25 blur-[110px]" />
@@ -16,7 +16,7 @@ export function HeroSection() {
       <div className="absolute inset-0 hero-vignette pointer-events-none" />
 
       <Container>
-        <div className="flex flex-col items-center space-y-10 text-center">
+        <div className="flex min-h-[calc(100vh-8rem)] flex-col items-center justify-center space-y-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
