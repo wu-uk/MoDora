@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
+import { ScrollGlowTitle } from "@/components/ui/scroll-glow-title";
 import { FileSearch, Network, Quote, Library } from "lucide-react";
 
 const features = [
@@ -38,11 +39,11 @@ export function FeaturesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true, amount: 0.3 }}
-            className="text-center space-y-4 max-w-3xl mx-auto"
+            className="-translate-y-2 text-center space-y-4 max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <ScrollGlowTitle className="text-3xl font-bold tracking-tight sm:text-4xl">
               Key Features
-            </h2>
+            </ScrollGlowTitle>
             <p className="text-lg text-muted-foreground">
               Built for depth and accuracy. MoDora goes beyond simple text matching.
             </p>
@@ -65,8 +66,8 @@ export function FeaturesSection() {
                 className="h-full"
               >
                 <SpotlightCard 
-                  className="h-full p-8 bg-secondary/5 border-secondary/20"
-                  spotlightColor="rgba(59, 130, 246, 0.2)"
+                  className="aurora-card h-full p-8 bg-secondary/10 border-violet-300/20 dark:border-violet-400/20"
+                  spotlightColor="rgba(167, 139, 250, 0.22)"
                 >
                   <div className="relative z-10">
                     <div className="mb-4 inline-flex items-center justify-center rounded-lg bg-primary/10 p-3 text-primary">

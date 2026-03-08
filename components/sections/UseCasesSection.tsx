@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
+import { ScrollGlowTitle } from "@/components/ui/scroll-glow-title";
 import { Microscope, TrendingUp, Code, BookOpen } from "lucide-react";
 
 const useCases = [
@@ -40,9 +41,9 @@ export function UseCasesSection() {
             viewport={{ once: true, amount: 0.3 }}
             className="text-center space-y-4 max-w-3xl mx-auto"
           >
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <ScrollGlowTitle className="text-3xl font-bold tracking-tight sm:text-4xl">
               Use Cases
-            </h2>
+            </ScrollGlowTitle>
             <p className="text-lg text-muted-foreground">
               MoDora is designed for information-dense environments.
             </p>
@@ -65,8 +66,8 @@ export function UseCasesSection() {
                 className="h-full"
               >
                 <SpotlightCard 
-                  className="h-full p-6 bg-white dark:bg-slate-900 border-neutral-200 dark:border-white/10 hover:shadow-xl transition-shadow"
-                  spotlightColor="rgba(147, 51, 234, 0.15)"
+                  className="aurora-card h-full p-6 bg-white/90 dark:bg-slate-900/90 border-violet-200/50 dark:border-violet-400/20"
+                  spotlightColor="rgba(192, 132, 252, 0.22)"
                 >
                   <div className="relative z-10 flex flex-col h-full">
                     <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">

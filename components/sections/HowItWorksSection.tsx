@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
+import { ScrollGlowTitle } from "@/components/ui/scroll-glow-title";
 import { Upload, ScanLine, GitFork, Search, MessageSquare } from "lucide-react";
 
 const steps = [
@@ -44,9 +45,9 @@ export function HowItWorksSection() {
             viewport={{ once: true, amount: 0.3 }}
             className="text-center space-y-4"
           >
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <ScrollGlowTitle className="text-3xl font-bold tracking-tight sm:text-4xl">
               How It Works
-            </h2>
+            </ScrollGlowTitle>
             <p className="text-lg text-muted-foreground">
               The MoDora Pipeline
             </p>
@@ -70,7 +71,7 @@ export function HowItWorksSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1], delay: index * 0.06 }}
                   viewport={{ once: true, amount: 0.2 }}
-                  className="flex flex-col items-center text-center bg-background p-6 rounded-lg border shadow-sm"
+                  className="aurora-card flex flex-col items-center text-center bg-background/90 p-6 rounded-lg border border-violet-200/40 dark:border-violet-400/20 shadow-sm"
                 >
                   <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
                     <step.icon className="h-6 w-6" />

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
 import { Button } from "@/components/ui/button";
+import { ScrollGlowTitle } from "@/components/ui/scroll-glow-title";
 import { Github } from "lucide-react";
 import Link from "next/link";
 
@@ -17,9 +18,9 @@ export function OpenSourceSection() {
           viewport={{ once: true, amount: 0.3 }}
           className="flex flex-col items-center text-center space-y-8"
         >
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <ScrollGlowTitle className="text-3xl font-bold tracking-tight sm:text-4xl">
             Proudly Open Source
-          </h2>
+          </ScrollGlowTitle>
           <p className="text-lg text-primary-foreground/90 max-w-2xl">
             MoDora is built by the community, for the community. Join us in advancing the state of multimodal document analysis.
           </p>

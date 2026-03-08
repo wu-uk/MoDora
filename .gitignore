@@ -72,3 +72,10 @@ local.json
 MoDora-backend/data/
 
 data/
+
+# Next.js build artifacts
+.next/
+out/
+node_modules/
+*.tsbuildinfo
+.backup/

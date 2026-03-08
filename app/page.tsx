@@ -5,7 +5,6 @@ import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import { ArchitectureSection } from "@/components/sections/ArchitectureSection";
 import { UseCasesSection } from "@/components/sections/UseCasesSection";
-import { OpenSourceSection } from "@/components/sections/OpenSourceSection";
 import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
         <HowItWorksSection />
         <ArchitectureSection />
         <UseCasesSection />
-        <OpenSourceSection />
       </main>
       <Footer />
     </div>

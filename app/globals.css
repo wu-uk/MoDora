@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
  
-    --primary: 221.2 83.2% 53.3%;
+    --primary: 266 78% 66%;
     --primary-foreground: 210 40% 98%;
  
     --secondary: 210 40% 96.1%;
@@ -30,9 +30,12 @@
  
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 221.2 83.2% 53.3%;
+    --ring: 266 78% 66%;
  
     --radius: 0.5rem;
+    --brand-lavender: 268 76% 76%;
+    --brand-violet: 262 83% 72%;
+    --brand-pink: 292 74% 78%;
   }
  
   .dark {
@@ -45,8 +48,8 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
  
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 268 68% 62%;
+    --primary-foreground: 210 40% 98%;
  
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -62,7 +65,7 @@
  
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 268 68% 62%;
   }
 }
  
@@ -72,6 +75,11 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(1200px 420px at 10% -5%, hsl(var(--brand-lavender) / 0.16), transparent 65%),
+      radial-gradient(1000px 360px at 85% 10%, hsl(var(--brand-violet) / 0.14), transparent 68%),
+      radial-gradient(900px 340px at 50% 100%, hsl(var(--brand-pink) / 0.12), transparent 70%);
+    background-attachment: fixed;
   }
 }
 
@@ -88,9 +96,53 @@
 }
 
 .text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600 dark:from-blue-400 dark:to-purple-400;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-400 dark:from-violet-300 dark:to-fuchsia-300;
 }
 
 .glass-card {
   @apply bg-white/50 dark:bg-slate-900/50 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-xl;
+}
+
+.hero-vignette {
+  background:
+    radial-gradient(ellipse at center, transparent 30%, rgba(2, 6, 23, 0.18) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.04) 100%);
+}
+
+.aurora-card {
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 280ms ease, border-color 280ms ease;
+}
+
+.aurora-card:hover {
+  transform: translateY(-6px) rotateX(2deg) rotateY(-2deg);
+  box-shadow: 0 18px 45px -18px rgba(167, 139, 250, 0.45), 0 10px 24px -16px rgba(217, 70, 239, 0.48);
+  border-color: rgba(167, 139, 250, 0.45);
+}
+
+.scroll-shine {
+  color: transparent;
+  background-image: linear-gradient(
+    105deg,
+    rgba(88, 28, 135, 0.98) 0%,
+    rgba(88, 28, 135, 0.98) 42%,
+    rgba(255, 255, 255, 0.98) 50%,
+    rgba(88, 28, 135, 0.98) 58%,
+    rgba(88, 28, 135, 0.98) 100%
+  );
+  background-size: 220% 100%;
+  background-position: 130% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  will-change: background-position;
+}
+
+.dark .scroll-shine {
+  background-image: linear-gradient(
+    105deg,
+    rgba(233, 213, 255, 0.96) 0%,
+    rgba(233, 213, 255, 0.96) 42%,
+    rgba(255, 255, 255, 0.98) 50%,
+    rgba(233, 213, 255, 0.96) 58%,
+    rgba(233, 213, 255, 0.96) 100%
+  );
 }

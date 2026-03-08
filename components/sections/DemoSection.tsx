@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Container } from "@/components/layout/Container";
+import { ScrollGlowTitle } from "@/components/ui/scroll-glow-title";
 
 export function DemoSection() {
   return (
@@ -15,9 +16,9 @@ export function DemoSection() {
             viewport={{ once: true, amount: 0.3 }}
             className="text-center space-y-4 max-w-3xl"
           >
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <ScrollGlowTitle className="text-3xl font-bold tracking-tight sm:text-4xl">
               See MoDora in Action
-            </h2>
+            </ScrollGlowTitle>
             <p className="text-lg text-muted-foreground">
               From raw documents to grounded answers. MoDora parses, structures, and reasons over your data.
             </p>
@@ -28,7 +29,7 @@ export function DemoSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border bg-background"
+            className="aurora-card relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border border-violet-300/30 dark:border-violet-300/20 bg-background"
           >
             <iframe
               src="https://player.vimeo.com/video/1168527529?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -55,7 +56,7 @@ export function DemoSection() {
                 viewport={{ once: true, amount: 0.2 }}
                 className="flex flex-col items-center space-y-2"
               >
-                <div className="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm">
+                <div className="aurora-card flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm">
                   {i + 1}
                 </div>
                 <span className="text-sm font-medium">{step}</span>
