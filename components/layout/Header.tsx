@@ -13,13 +13,13 @@ export function Header() {
           </Link>
           
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
-            <Link href="#features" className="hover:text-foreground transition-colors">
+            <Link href="/#features" className="hover:text-foreground transition-colors">
               Features
             </Link>
-            <Link href="#how-it-works" className="hover:text-foreground transition-colors">
+            <Link href="/#how-it-works" className="hover:text-foreground transition-colors">
               How it Works
             </Link>
-            <Link href="#architecture" className="hover:text-foreground transition-colors">
+            <Link href="/#architecture" className="hover:text-foreground transition-colors">
               Architecture
             </Link>
             <Link href="/cases" className="hover:text-foreground transition-colors">
@@ -35,7 +35,7 @@ export function Header() {
               </Link>
             </Button>
             <Button asChild>
-              <Link href="#demo">View Demo</Link>
+              <Link href="/#demo">View Demo</Link>
             </Button>
           </div>
         </div>
