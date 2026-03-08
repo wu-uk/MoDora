@@ -61,7 +61,7 @@ export function HeroAnimation() {
 
         {/* --- Main Trunk (Base to Branch Point) --- */}
         <motion.path
-          d="M 400 240 L 400 180"
+          d="M 400 240 L 400 160"
           stroke="url(#gradient-main)"
           strokeWidth="12"
           strokeLinecap="round"
@@ -72,9 +72,9 @@ export function HeroAnimation() {
         />
 
         {/* --- Branches (Branch Point to Nodes) --- */}
-        {/* Branch 1 (Far Left) */}
+        {/* Branch 1 (Far Left - shifted up-left) */}
         <motion.path
-          d="M 400 180 C 400 140, 220 160, 200 120"
+          d="M 400 160 C 380 120, 200 140, 180 100"
           stroke="url(#gradient-main)"
           strokeWidth="6"
           strokeLinecap="round"
@@ -83,9 +83,9 @@ export function HeroAnimation() {
           animate={{ pathLength: 1, opacity: 1 }}
           transition={{ duration: 1.0, ease: "easeOut", delay: 2.8 }}
         />
-        {/* Branch 2 (Left) */}
+        {/* Branch 2 (Left - shifted up-left) */}
         <motion.path
-          d="M 400 180 C 400 140, 300 130, 300 90"
+          d="M 400 160 C 380 120, 280 110, 280 70"
           stroke="url(#gradient-main)"
           strokeWidth="7"
           strokeLinecap="round"
@@ -94,9 +94,9 @@ export function HeroAnimation() {
           animate={{ pathLength: 1, opacity: 1 }}
           transition={{ duration: 1.0, ease: "easeOut", delay: 2.9 }}
         />
-        {/* Branch 3 (Center) */}
+        {/* Branch 3 (Center - shifted up) */}
         <motion.path
-          d="M 400 180 L 400 70"
+          d="M 400 160 L 400 50"
           stroke="url(#gradient-main)"
           strokeWidth="8"
           strokeLinecap="round"
@@ -105,9 +105,9 @@ export function HeroAnimation() {
           animate={{ pathLength: 1, opacity: 1 }}
           transition={{ duration: 1.0, ease: "easeOut", delay: 3.0 }}
         />
-        {/* Branch 4 (Right) */}
+        {/* Branch 4 (Right - shifted up) */}
         <motion.path
-          d="M 400 180 C 400 140, 500 130, 500 90"
+          d="M 400 160 C 420 120, 520 110, 520 70"
           stroke="url(#gradient-main)"
           strokeWidth="7"
           strokeLinecap="round"
@@ -116,9 +116,9 @@ export function HeroAnimation() {
           animate={{ pathLength: 1, opacity: 1 }}
           transition={{ duration: 1.0, ease: "easeOut", delay: 3.1 }}
         />
-        {/* Branch 5 (Far Right) */}
+        {/* Branch 5 (Far Right - shifted up) */}
         <motion.path
-          d="M 400 180 C 400 140, 580 160, 600 120"
+          d="M 400 160 C 420 120, 600 140, 620 100"
           stroke="url(#gradient-main)"
           strokeWidth="6"
           strokeLinecap="round"
@@ -132,11 +132,11 @@ export function HeroAnimation() {
       {/* Nodes (Circles at top) */}
       <div className="absolute inset-0 z-20 pointer-events-none">
         {[
-          { cx: "25%", cy: "30%", delay: 3.8, color: "bg-purple-300" }, // Far Left (200, 120) / 800x400
-          { cx: "37.5%", cy: "22.5%", delay: 3.9, color: "bg-purple-400" }, // Left (300, 90)
-          { cx: "50%", cy: "17.5%", delay: 4.0, color: "bg-purple-500" }, // Center (400, 70)
-          { cx: "62.5%", cy: "22.5%", delay: 4.1, color: "bg-purple-600" }, // Right (500, 90)
-          { cx: "75%", cy: "30%", delay: 4.2, color: "bg-purple-700" }, // Far Right (600, 120)
+          { cx: "22.5%", cy: "25%", delay: 3.8, color: "bg-purple-300" }, // Branch 1: (180, 100) / 800x400
+          { cx: "35%", cy: "17.5%", delay: 3.9, color: "bg-purple-400" }, // Branch 2: (280, 70)
+          { cx: "50%", cy: "12.5%", delay: 4.0, color: "bg-purple-500" }, // Branch 3: (400, 50)
+          { cx: "65%", cy: "17.5%", delay: 4.1, color: "bg-purple-600" }, // Branch 4: (520, 70)
+          { cx: "77.5%", cy: "25%", delay: 4.2, color: "bg-purple-700" }, // Branch 5: (620, 100)
         ].map((node, i) => (
           <motion.div
             key={i}

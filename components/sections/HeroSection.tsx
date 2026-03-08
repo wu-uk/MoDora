@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden py-20 md:py-32 lg:py-40 bg-background">
+    <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32 bg-background">
       {/* Grid Background & Glow */}
       <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-slate-950 bg-grid-small-black dark:bg-grid-small-white">
         {/* Radial gradient mask */}
@@ -28,16 +28,11 @@ export function HeroSection() {
             transition={{ duration: 0.5 }}
             className="space-y-4 max-w-4xl"
           >
-            <div className="inline-flex items-center rounded-full border border-primary/20 px-3 py-1 text-sm font-medium text-primary bg-primary/5 backdrop-blur-sm mb-4 shadow-[0_0_15px_rgba(0,0,0,0.1)] dark:shadow-[0_0_15px_rgba(255,255,255,0.05)]">
-              <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
-              Now Open Source
-            </div>
-            
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-foreground leading-[1.1]">
               MoDora
             </h1>
             
-            <p className="text-xl md:text-3xl text-muted-foreground max-w-2xl mx-auto font-light">
+            <p className="text-xl md:text-3xl font-light text-gradient">
               Multimodal Document Analysis Assistant
             </p>
           </motion.div>
