@@ -72,9 +72,9 @@ export function HeroAnimation() {
         />
 
         {/* --- Branches (Branch Point to Nodes) --- */}
-        {/* Branch 1 (Far Left - shifted up-left) */}
+        {/* Branch 1 (Far Left) - Target: (180, 100) */}
         <motion.path
-          d="M 400 160 C 380 120, 200 140, 180 100"
+          d="M 400 160 C 350 130, 220 140, 180 100"
           stroke="url(#gradient-main)"
           strokeWidth="6"
           strokeLinecap="round"
@@ -83,9 +83,9 @@ export function HeroAnimation() {
           animate={{ pathLength: 1, opacity: 1 }}
           transition={{ duration: 1.0, ease: "easeOut", delay: 2.8 }}
         />
-        {/* Branch 2 (Left - shifted up-left) */}
+        {/* Branch 2 (Left) - Target: (280, 70) */}
         <motion.path
-          d="M 400 160 C 380 120, 280 110, 280 70"
+          d="M 400 160 C 360 120, 300 110, 280 70"
           stroke="url(#gradient-main)"
           strokeWidth="7"
           strokeLinecap="round"
@@ -94,7 +94,7 @@ export function HeroAnimation() {
           animate={{ pathLength: 1, opacity: 1 }}
           transition={{ duration: 1.0, ease: "easeOut", delay: 2.9 }}
         />
-        {/* Branch 3 (Center - shifted up) */}
+        {/* Branch 3 (Center) - Target: (400, 50) */}
         <motion.path
           d="M 400 160 L 400 50"
           stroke="url(#gradient-main)"
@@ -105,9 +105,9 @@ export function HeroAnimation() {
           animate={{ pathLength: 1, opacity: 1 }}
           transition={{ duration: 1.0, ease: "easeOut", delay: 3.0 }}
         />
-        {/* Branch 4 (Right - shifted up) */}
+        {/* Branch 4 (Right) - Target: (520, 70) */}
         <motion.path
-          d="M 400 160 C 420 120, 520 110, 520 70"
+          d="M 400 160 C 440 120, 500 110, 520 70"
           stroke="url(#gradient-main)"
           strokeWidth="7"
           strokeLinecap="round"
@@ -116,9 +116,9 @@ export function HeroAnimation() {
           animate={{ pathLength: 1, opacity: 1 }}
           transition={{ duration: 1.0, ease: "easeOut", delay: 3.1 }}
         />
-        {/* Branch 5 (Far Right - shifted up) */}
+        {/* Branch 5 (Far Right) - Target: (620, 100) */}
         <motion.path
-          d="M 400 160 C 420 120, 600 140, 620 100"
+          d="M 400 160 C 450 130, 580 140, 620 100"
           stroke="url(#gradient-main)"
           strokeWidth="6"
           strokeLinecap="round"
@@ -132,19 +132,24 @@ export function HeroAnimation() {
       {/* Nodes (Circles at top) */}
       <div className="absolute inset-0 z-20 pointer-events-none">
         {[
-          { cx: "22.5%", cy: "25%", delay: 3.8, color: "bg-purple-300" }, // Branch 1: (180, 100) / 800x400
-          { cx: "35%", cy: "17.5%", delay: 3.9, color: "bg-purple-400" }, // Branch 2: (280, 70)
-          { cx: "50%", cy: "12.5%", delay: 4.0, color: "bg-purple-500" }, // Branch 3: (400, 50)
-          { cx: "65%", cy: "17.5%", delay: 4.1, color: "bg-purple-600" }, // Branch 4: (520, 70)
-          { cx: "77.5%", cy: "25%", delay: 4.2, color: "bg-purple-700" }, // Branch 5: (620, 100)
+          { cx: "22.5%", cy: "25%", delay: 3.8, color: "bg-purple-300" }, // Branch 1: (180, 100) / 800x400 = 22.5%, 25%
+          { cx: "35%", cy: "17.5%", delay: 3.9, color: "bg-purple-400" }, // Branch 2: (280, 70) / 800x400 = 35%, 17.5%
+          { cx: "50%", cy: "12.5%", delay: 4.0, color: "bg-purple-500" }, // Branch 3: (400, 50) / 800x400 = 50%, 12.5%
+          { cx: "65%", cy: "17.5%", delay: 4.1, color: "bg-purple-600" }, // Branch 4: (520, 70) / 800x400 = 65%, 17.5%
+          { cx: "77.5%", cy: "25%", delay: 4.2, color: "bg-purple-700" }, // Branch 5: (620, 100) / 800x400 = 77.5%, 25%
         ].map((node, i) => (
           <motion.div
             key={i}
             className={cn(
-              "absolute w-12 h-12 rounded-full shadow-lg border-2 border-white/50 backdrop-blur-sm transform -translate-x-1/2 -translate-y-1/2",
+              "absolute w-12 h-12 rounded-full shadow-lg border-2 border-white/50 backdrop-blur-sm", // Removed transform to use center positioning logic if needed, but keeping it simple for now
               node.color
             )}
-            style={{ left: node.cx, top: node.cy }}
+            style={{ 
+              left: node.cx, 
+              top: node.cy,
+              marginLeft: "-24px", // Half of width (48px / 2)
+              marginTop: "-24px"   // Half of height (48px / 2)
+            }}
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{
