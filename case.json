@@ -1,0 +1,380 @@
+[
+  {
+    "questionId": 15,
+    "question": "How many steps are reduced in Tile Replacement for PBU Metal Panel Walls compared to Tile Replacement for PBU Drywalls?",
+    "answer": "1",
+    "pdf_id": "8.pdf",
+    "tag": "2-2"
+  },
+  {
+    "questionId": 25,
+    "question": "What is the heading on the first page and the forth page?",
+    "answer": "Consultant Prepared TE Report, Local Government Prepared TE Report",
+    "pdf_id": "13.pdf",
+    "tag": "2-4"
+  },
+  {
+    "questionId": 82,
+    "question": "What is the title of the article in the top section of the document?",
+    "answer": "Effects of tuning of ankle foot orthoses-footwear combination using wedges on stance phase knee hyperextension in children with cerebral palsy – Preliminary results",
+    "pdf_id": "42.pdf",
+    "tag": "1-4"
+  },
+  {
+    "questionId": 83,
+    "question": "What is the header and sidebar in the second page respectively?",
+    "answer": "Disability and Rehabilitation: Assistive Technology, November 2009; 4(6): 406–413, Downloaded by [University of Wisconsin Oshkosh] at 02:07 06 November 2015",
+    "pdf_id": "42.pdf",
+    "tag": "2-4"
+  },
+  {
+    "questionId": 99,
+    "question": "What aspects does the article introduce for each type of dowsing tool?",
+    "answer": "Shape, material , how to use, advantages, disadvantages",
+    "pdf_id": "50.pdf",
+    "tag": "2-3"
+  },
+  {
+    "questionId": 110,
+    "question": "What is the title of the document?",
+    "answer": "Tailoring and tuning of the broadband spectrum of a step-chirped grating based frequency doubler using tightly-focused Gaussian beams",
+    "pdf_id": "56.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 116,
+    "question": "What does the downward arrow in Figure 6.1 represent?",
+    "answer": "SLANG",
+    "pdf_id": "59.pdf",
+    "tag": "1-2"
+  },
+  {
+    "questionId": 143,
+    "question": "How many references are listed?",
+    "answer": "23",
+    "pdf_id": "72.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 223,
+    "question": "What is written at the very bottom of the page?",
+    "answer": "MRI: LA : AP Dia on 3 chamber view > 4 cm",
+    "pdf_id": "113.pdf",
+    "tag": "1-4"
+  },
+  {
+    "questionId": 243,
+    "question": "Who describes the occurrence of \"take-over\"?",
+    "answer": "Jan E. Bouwen and Bert Overlaet.",
+    "pdf_id": "123.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 262,
+    "question": "What are the authors of the article that is referred for the CSS method mentioned in experimental details?",
+    "answer": "C. Ferekides, J. Britt, Y. Ma, L. Killian",
+    "pdf_id": "132.pdf",
+    "tag": "2-1"
+  },
+  {
+    "questionId": 308,
+    "question": "What colors are used in the pencil chart?",
+    "answer": "Yellow, blue, red, black, and white.",
+    "pdf_id": "155.pdf",
+    "tag": "1-2"
+  },
+  {
+    "questionId": 321,
+    "question": "What is shown at the bottom of page 5?",
+    "answer": "E.A. Kelley, all rights reserved.  Contact: oddlief@gmail.com",
+    "pdf_id": "162.pdf",
+    "tag": "1-4"
+  },
+  {
+    "questionId": 337,
+    "question": "What is represented by the y-axis in the final bar graph?",
+    "answer": "Bejan number (Be).",
+    "pdf_id": "170.pdf",
+    "tag": "1-2"
+  },
+  {
+    "questionId": 354, <----------------------- Here!!!
+    "question": "What are the main parts of a lesson in this module?",
+    "answer": "What’s In, What’s New, What is It, What’s More, What I Have Learned, What I Can Do, Assessment, Additional Activities, and Answer Key",
+    "pdf_id": "178.pdf",
+    "tag": "2-3"
+  },
+  {
+    "questionId": 370,
+    "question": "How more rounds does option 2 in Thumb have compared to option 1?",
+    "answer": "3 more rounds",
+    "pdf_id": "186.pdf",
+    "tag": "2-1"
+  },
+  {
+    "questionId": 382,
+    "question": "What is the part numbered 58 in Figure 2?",
+    "answer": "Universal joint",
+    "pdf_id": "192.pdf",
+    "tag": "1-3"
+  },
+  {
+    "questionId": 384,
+    "question": "What article is referred when discussing the casting shaping method in Introduction?",
+    "answer": "Preparation and characterization of poly (L-lactic acid) foams",
+    "pdf_id": "193.pdf",
+    "tag": "2-1"
+  },
+  {
+    "questionId": 399,
+    "question": "What are the main steps of adjustment instruction?",
+    "answer": "Application Range, Designation, Automatic Adjustment, Manual Adjustment, GND and Internal Pressure check, Audio, USB S/W Download (option, Service only)",
+    "pdf_id": "201.pdf",
+    "tag": "2-3"
+  },
+  {
+    "questionId": 446, <-------------------------- Here!!!
+    "question": "Which color is used to distinguish Yes?",
+    "answer": "Green",
+    "pdf_id": "224.pdf",
+    "tag": "2-5"
+  },
+  {
+    "questionId": 447,
+    "question": "When was the document received?",
+    "answer": "9 October 2001.",
+    "pdf_id": "225.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 448,
+    "question": "What does triangles indicate in Figure 1 on page 9-2?",
+    "answer": "stations.",
+    "pdf_id": "225.pdf",
+    "tag": "1-4"
+  },
+  {
+    "questionId": 474,
+    "question": "What is the coupon code for a $5 discount at Oakridge Hobbies?",
+    "answer": "OH5-618575",
+    "pdf_id": "238.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 476,
+    "question": "When did the article received?",
+    "answer": "4 February 2004",
+    "pdf_id": "239.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 513,
+    "question": "What color scheme is used in the knitted item shown in the document, and which chart corresponds to its pattern?",
+    "answer": "The color scheme is warm tones of red and orange, and the pattern corresponds to the diagrams on pages 3 to 7.",
+    "pdf_id": "258.pdf",
+    "tag": "2-5"
+  },
+  {
+    "questionId": 518,
+    "question": "How many factors are involved in determining context?",
+    "answer": "4",
+    "pdf_id": "260.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 525,
+    "question": "What is the main color of page 1?",
+    "answer": "purple.",
+    "pdf_id": "264.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 600,
+    "question": "What is written at the very top of page 3?",
+    "answer": "Key takeaways",
+    "pdf_id": "304.pdf",
+    "tag": "1-4"
+  },
+  {
+    "questionId": 604,
+    "question": "What is the last page number referenced on the document page and who is the author associated with it?",
+    "answer": " 218 — Yap, M.",
+    "pdf_id": "306.pdf",
+    "tag": "2-4"
+  },
+  {
+    "questionId": 616,
+    "question": "What color is used for the section titles in the document?",
+    "answer": "Black",
+    "pdf_id": "312.pdf",
+    "tag": "1-5"
+  },
+  {
+    "questionId": 650,
+    "question": "What is the color of the title 'The Bachelor Party'?",
+    "answer": "Green",
+    "pdf_id": "329.pdf",
+    "tag": "1-5"
+  },
+  {
+    "questionId": 663,
+    "question": "What is the color of the title under figure 4?",
+    "answer": "Black",
+    "pdf_id": "336.pdf",
+    "tag": "1-5"
+  },
+  {
+    "questionId": 664,
+    "question": "What is the title of figure 1?",
+    "answer": " The block diagram of the main data processing scheme.",
+    "pdf_id": "336.pdf",
+    "tag": "1-3"
+  },
+  {
+    "questionId": 769,
+    "question": "Referencing the diagram and the text, which section of the pattern uses the leaf motif and how many rows does it span in the chart?",
+    "answer": " Leaves section; 36 rows.",
+    "pdf_id": "389.pdf",
+    "tag": "2-2"
+  },
+  {
+    "questionId": 800,
+    "question": "What are the keywords listed in the article?",
+    "answer": "Rockburst, Lateral stress, Localized damage, Rotation, V-shaped",
+    "pdf_id": "404.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 810,
+    "question": "According to the document, what is the significance of adding gadolinium (Gd) in the ceramic matrix as described in the microcalorimetry results?",
+    "answer": "It segregates to grain boundaries, blocking their motion and raising the activation energy—microcalorimetry shows reduced heat release, decreasing the driving force for coarsening and halting grain growth (~50 nm).",
+    "pdf_id": "409.pdf",
+    "tag": "2-2"
+  },
+  {
+    "questionId": 814,
+    "question": "What is the result of reducing complex networks as mentioned in the abstract?",
+    "answer": "The result is a high degree of scalability and reconfigurability without reducing reliability.",
+    "pdf_id": "411.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 845,
+    "question": "What university is Charles Franklin Thwing affiliated with, and what educational work does he discuss in the document?",
+    "answer": "- University: Western Reserve University (president emeritus; also Adelbert College) - Work discussed: His book “The College President”",
+    "pdf_id": "427.pdf",
+    "tag": "2-1"
+  },
+  {
+    "questionId": 857,
+    "question": "What is the date on the first page?",
+    "answer": "APRIL 2015",
+    "pdf_id": "433.pdf",
+    "tag": "1-4"
+  },
+  {
+    "questionId": 866,
+    "question": "What is shown in the slide at the top of page 5?",
+    "answer": "A “Cancer Prevention Foods” slide listing items like green tea, broccoli, cabbage, citrus fruits, nuts, avocados, and tomatoes.",
+    "pdf_id": "437.pdf",
+    "tag": "1-4"
+  },
+  {
+    "questionId": 879,
+    "question": "When is this paper accepted?",
+    "answer": "23 January 2002",
+    "pdf_id": "444.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 882,
+    "question": "What is the number in the top-right corner?",
+    "answer": "557",
+    "pdf_id": "445.pdf",
+    "tag": "1-4"
+  },
+  {
+    "questionId": 907,
+    "question": "What is the number on the top-right corner of page 1?",
+    "answer": "1921",
+    "pdf_id": "458.pdf",
+    "tag": "1-4"
+  },
+  {
+    "questionId": 917,
+    "question": "What is the website of 'My Ravelry Store'?",
+    "answer": "http://www.ravelry.com/stores/smoothfox-crochet-designs",
+    "pdf_id": "463.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 918,
+    "question": "What is the website of 'My blog'?",
+    "answer": "http://smoothfoxlover.blogspot.com/",
+    "pdf_id": "463.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 920,
+    "question": "What is written on the left top conner of the second page?",
+    "answer": "418 Principles of Information Security",
+    "pdf_id": "464.pdf",
+    "tag": "1-4"
+  },
+  {
+    "questionId": 936,
+    "question": "What is written on the bottom of the first page?",
+    "answer": "July 2014 | Your monthly connection to First Presbyterian Church of San Antonio",
+    "pdf_id": "473.pdf",
+    "tag": "1-4"
+  },
+  {
+    "questionId": 939,
+    "question": "What is written at the bottom-left corner of the first page?",
+    "answer": "3/20/12",
+    "pdf_id": "474.pdf",
+    "tag": "1-4"
+  },
+  {
+    "questionId": 941,
+    "question": "What is the title of the document?",
+    "answer": "Efficient 1 kHz femtosecond optical parametric amplification in BiB3O6 pumped at 800 nm",
+    "pdf_id": "475.pdf",
+    "tag": "1-1"
+  },
+  {
+    "questionId": 961,
+    "question": "What is the total amount claimed for Labour (AV Tech)?",
+    "answer": "345.1",
+    "pdf_id": "485.pdf",
+    "tag": "2-1"
+  },
+  {
+    "questionId": 973,
+    "question": "How can subscribers benefit from The Washington Post app and where can they listen to its podcasts?",
+    "answer": "Subscribers enjoy unlimited access with features like reading the story as printed, saving to a reading list, and accessing 2 weeks of past issues. They can listen to podcasts at wpost.com/podcasts.",
+    "pdf_id": "491.pdf",
+    "tag": "2-1"
+  },
+  {
+    "questionId": 976,
+    "question": "What number is written on the top-right corner of page 1?",
+    "answer": "263",
+    "pdf_id": "493.pdf",
+    "tag": "1-4"
+  },
+  {
+    "questionId": 983,
+    "question": "What is the purpose of using a sustained-release formulation in the study described in section 576?",
+    "answer": "The purpose of using a sustained-release formulation in the study described in section 576 is to achieve prolonged duration of efficacy and significant improvement in histological scores of joint tissues with low systemic exposure and without prolonged inhibition of the HPA axis.",
+    "pdf_id": "496.pdf",
+    "tag": "2-3"
+  },
+  {
+    "questionId": 1048,
+    "question": "How is the weather described in Scotland for September 1964?",
+    "answer": "​​Unsettled with frequent rain and dull weather, but brighter with showers at the end of the month.​",
+    "pdf_id": "529.pdf",
+    "tag": "1-3"
+  }
+]

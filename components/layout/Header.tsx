@@ -22,7 +22,7 @@ export function Header() {
             <Link href="#architecture" className="hover:text-foreground transition-colors">
               Architecture
             </Link>
-            <Link href="#use-cases" className="hover:text-foreground transition-colors">
+            <Link href="/cases" className="hover:text-foreground transition-colors">
               Use Cases
             </Link>
           </nav>

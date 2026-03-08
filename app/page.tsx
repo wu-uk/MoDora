@@ -4,7 +4,6 @@ import { DemoSection } from "@/components/sections/DemoSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import { ArchitectureSection } from "@/components/sections/ArchitectureSection";
-import { UseCasesSection } from "@/components/sections/UseCasesSection";
 import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
         <FeaturesSection />
         <HowItWorksSection />
         <ArchitectureSection />
-        <UseCasesSection />
       </main>
       <Footer />
     </div>
