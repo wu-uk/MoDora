@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/Container";
+import { HeroAnimation } from "@/components/sections/hero-animation";
 import { ArrowRight, Github, FileText, Database, Brain } from "lucide-react";
 import Link from "next/link";
 
@@ -66,30 +67,10 @@ export function HeroSection() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-16 relative w-full max-w-4xl aspect-[2/1] rounded-xl border bg-background/50 backdrop-blur-sm shadow-2xl flex items-center justify-center overflow-hidden"
+            className="mt-16 relative w-full max-w-5xl aspect-[16/9] md:aspect-[2/1] rounded-2xl border bg-background/40 backdrop-blur-md shadow-2xl flex items-center justify-center overflow-hidden"
           >
-             <div className="absolute inset-0 bg-grid-slate-100/50 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]" />
-             
-             {/* Concept Nodes */}
-             <div className="relative z-10 flex flex-col items-center gap-8">
-                <div className="p-4 bg-white rounded-lg shadow-lg border flex items-center gap-3">
-                  <FileText className="h-6 w-6 text-primary" />
-                  <span className="font-semibold">Complex Document</span>
-                </div>
-                
-                <div className="w-px h-8 bg-border border-l-2 border-dashed" />
-                
-                <div className="flex gap-8">
-                  <div className="p-3 bg-white rounded-lg shadow-md border flex items-center gap-2">
-                    <Database className="h-5 w-5 text-blue-500" />
-                    <span className="text-sm">Structured Tree</span>
-                  </div>
-                  <div className="p-3 bg-white rounded-lg shadow-md border flex items-center gap-2">
-                    <Brain className="h-5 w-5 text-purple-500" />
-                    <span className="text-sm">Reasoning</span>
-                  </div>
-                </div>
-             </div>
+             <div className="absolute inset-0 bg-grid-small-black/[0.05] dark:bg-grid-small-white/[0.05]" />
+             <HeroAnimation />
           </motion.div>
         </div>
       </Container>
