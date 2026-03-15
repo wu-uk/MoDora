@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { DemoSection } from "@/components/sections/DemoSection";
+import { ComparisonSection } from "@/components/sections/ComparisonSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import { ArchitectureSection } from "@/components/sections/ArchitectureSection";
@@ -13,6 +14,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <DemoSection />
+        <ComparisonSection />
         <FeaturesSection />
         <HowItWorksSection />
         <ArchitectureSection />
